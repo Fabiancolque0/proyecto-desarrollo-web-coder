@@ -1,0 +1,22 @@
+.principal {
+    margin-top: 5vh;
+        .home {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 0.5vw;
+            font-size: 120%;
+                div.img{ height: 50x;
+                width: 70%;
+                object-fit: cover;
+                    ._home { border: 1px solid rgba(0, 0, 0, 0.331);
+                        padding: 20px;
+                        text-align: center;
+                        .-img { border: 1spx solid rgba(247, 5, 5, 0.331);
+                            color:rgb(3, 0, 8);
+                            padding: 10px;
+                            text-align: center;
+                            }   
+                        }    
+                    }
+                }
+            }

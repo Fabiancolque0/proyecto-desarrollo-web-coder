@@ -1,0 +1,276 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+body {
+  background-image: url("../assets/prueba.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+header{
+  
+  margin-top: auto;
+  text-align: center;
+}
+
+
+
+.background-image_contacto{
+  background-image: url("../assets/imagenfondo3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+footer {
+  background-color:#333;
+  color: white;
+  text-align:center;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+  
+}
+
+
+
+/*home*/
+.principal {
+  margin-top: 5vh;
+}
+.home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0.5vw;
+  font-size: 120%;
+}
+
+.home__home {
+  border: 1px solid rgba(0, 0, 0, 0.331);
+  padding: 20px;
+  text-align: center;
+}
+
+.home__home-img {
+  border: 1spx solid rgba(247, 5, 5, 0.331);
+  color:rgb(3, 0, 8);
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+.home>div>div>img {
+  height: 50x;
+  width: 70%;
+  object-fit: cover;
+}
+
+
+  .grid {
+  display: grid;  
+  grid-template-columns: 100px 300px;
+  grid-template-rows: 1fr 1fr; 
+    }
+    
+
+
+
+@media only screen and (max-width: 600px) {
+  .home {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      padding: 0.5vw;
+  }
+}
+
+/*sobremi*/
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 100vh;
+}
+.contenedor figure{
+  position: relative;
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px
+  rgba(0,0,0,0.50);
+  cursor: pointer;
+}
+.contenedor figure img{
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+}
+.contenedor figure .capa{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100px;
+  background: rgba(11,103,123,0.6);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+.contenedor figure:hover > .capa{
+  opacity: 1;
+  visibility: visible;
+}
+.contenedor figure:hover >img {
+  transform: scale(1.2);
+}
+.contenedor figure > .capa h3 {
+  color: #fff;
+  font-weight: 100;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 30px;
+}
+
+.contenedor .capa p{
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  
+}
+
+/*sobremi*/
+
+
+
+/*contacto*/
+
+.contacto-flex{
+  display: flex;     
+  flex-direction: column; 
+  justify-content: space-around;
+  height: 300px;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.w-30 {
+  width: 30%;
+}
+.text-mate{
+  float: left;
+  margin: 10%;
+}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 10px;
+
+  padding: 20px;
+}
+
+
+/*materiales*/
+
+.materiales {
+    display: grid;
+    grid-template-areas:
+        'foto3'
+        'foto2'
+        'foto1'
+        'foto5'
+        'foto6'
+        'foto4';
+    grid-template-columns: repeat(1, auto);
+    align-content:flex-start;
+    gap: 10px;
+    padding: 0.5vw;
+    margin-top: 5vh;
+}
+
+
+.materiales>div>img {
+  
+    width: 100%;
+    height: 100%;
+    object-fit:cover
+    
+    
+}
+.materiales>div>img:hover{
+  
+  opacity:70%;
+}
+
+.foto1 {
+    grid-area: foto1;
+  }
+  
+  .foto2 {
+    grid-area: foto2;
+  }
+
+  .foto3 {
+    grid-area: foto3;
+  }
+
+  .foto4 {
+    grid-area: foto4;
+}
+
+.foto5 {
+  grid-area: foto5;
+}
+
+.foto6 {
+  grid-area: foto6;
+}
+
+@media only screen and (min-width: 800px){
+.materiales {
+        display: grid;
+        grid-template-areas:
+            'foto3 foto3 foto2 foto2 foto2 foto2'
+            'foto1 foto1 foto5 foto5 foto5 foto5'
+            'foto6 foto6 foto6 foto4 foto4 foto4';
+        grid-template-columns: repeat(6, auto);
+        align-content: stretch;
+        gap: 10px;
+        padding: 0.5vw;
+    }}
